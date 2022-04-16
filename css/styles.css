@@ -118,16 +118,16 @@ text-decoration: none;
   background-position: center;
 }
 .icon-sputnik::before {
-  background-image: url(../webstudio-version2.1copy/antenna1.svg);
+  background-image: url(../icon.svg/antenna1.svg);
 }
 .icon-time::before {
-  background-image: url(../webstudio-version2.1copy/clock1.svg);
+  background-image: url(../icon.svg/clock1.svg);
 }
 .icon-comp::before {
-  background-image: url(../webstudio-version2.1copy/diagram1.svg);
+  background-image: url(../icon.svg/diagram1.svg);
 }
 .icon-cosmo::before {
-  background-image: url(../webstudio-version2.1copy/astronaut1.svg);
+  background-image: url(../icon.svg/astronaut1.svg);
 }
 .auth-link-tel:hover {
   color: var(--accent-color);
