@@ -25,21 +25,19 @@ body {
   padding-right: 15px;
 }
 .section {
-  padding-top: 94px;
+ padding-top: 94px;
   padding-bottom: 94px;
 }
-
 /* логотип */
 .page-header {
   border-bottom: 1px solid #ECECEC;;
 }
 .kontainer-header {
-  display: flex;
-  align-items: center;
+  display:flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
-
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -56,15 +54,12 @@ body {
   align-items: center;
   vertical-align: middle;
 }
-
-
 /* навигацыя хедера */
 .site-nav-list {
   display: flex;
   margin-left: 93px;
 }
 .site-nav-list .item {
-
   margin-right: 50px;
 }
 .site-nav-list .item:last-child {
@@ -73,13 +68,73 @@ body {
 .auth-nav-list {
   display: flex;
   margin-left: auto;
-  
+  align-items: center;
 }
 .auth-nav-list .item +.item {
-
   margin-left: 50px;
 }
 
+.auth-nav-list::before {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    background-image: url(../webstudio-version2.1copy/envelope@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content:"";
+}
+.icon-tel::before{
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../webstudio-version2.1copy/Vector.png);
+}
+
+
+
+.auth-link {font-family: Roboto,
+sans-serif;
+font-style: normal;
+color: var(--title-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+}
+
+.feature-list .item::before {
+  display:block;
+  content: "";
+  background-color: var(--primery-bg-color);
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-sputnik::before {
+  background-image: url(../webstudio-version2.1copy/antenna1.svg);
+}
+.icon-time::before {
+  background-image: url(../webstudio-version2.1copy/clock1.svg);
+}
+.icon-comp::before {
+  background-image: url(../webstudio-version2.1copy/diagram1.svg);
+}
+.icon-cosmo::before {
+  background-image: url(../webstudio-version2.1copy/astronaut1.svg);
+}
+.auth-link-tel:hover {
+  color: var(--accent-color);
+}
+.auth-link-tel:focus{
+  color: var(--accent-color);
+}
 
 /* ссылки */
 .auth-link {
@@ -129,8 +184,17 @@ body {
 }
 /* герой */
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--header-logo-color);
- background-image: url(../img-home-work2/Img9.jpg);
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+url(../img-home-work2/Img9.jpg);
+
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
   text-align: center;
   height: 600px;
   padding-top: 200px;
@@ -204,6 +268,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  
 }
 img {
   display: block;
@@ -221,17 +286,15 @@ img {
   margin-right: 0px;
 }
 .photo-card {
- 
   display: flex;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-0px 1px 1px rgba(0, 0, 0, 0.14),
-0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-
 }
 
 .photo-card .item {
     margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .photo-card .item:last-child{
   margin-right: 0;
