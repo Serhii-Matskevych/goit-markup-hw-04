@@ -78,7 +78,7 @@ body {
     margin-right: 10px;
     width: 16px;
     height: 12px;
-    background-image: url(../webstudio-version2.1copy/envelope@2x.png);
+    background-image: url(../icon.svg/envelope.svg);
     background-repeat: no-repeat;
     background-size: contain;
     content:"";
@@ -92,7 +92,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../webstudio-version2.1copy/Vector.png);
+  background-image: url(../icon.svg/Vector.svg);
 }
 
 
