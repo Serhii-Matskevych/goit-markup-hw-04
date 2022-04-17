@@ -75,28 +75,15 @@ body {
 .auth-nav-list .item +.item {
   margin-left: 50px;
 }
-
-.auth-nav-list::before {
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
-    background-image: url(../icon.svg/envelope.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    content:"";
-}
-.icon-tel::before{
-  display: inline-block;
-  content: "";
-  width: 10px;
-  height: 16px;
+.icon-mail {
   margin-right: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../icon.svg/Vector.svg);
 }
-
+.icon-tel {
+  margin-right: 10px;
+}
+.icon-tel:hover{
+  fill: var(--accent-color);
+}
 .icon {
 display: flex;
 align-items: center;
@@ -107,19 +94,24 @@ justify-content: center;
     background-color: var(--primery-bg-color);
   border-radius: 4px;
 }
+.icon-mail {
+  align-items: center;
+  justify-content: center;
+ 
+}
 .icon-company {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
-  background-color: var(--company-bg-color);
-  border: 1px solid #AFB1B8;
   border-radius: 4px;
- cursor: pointer;
+border: 1px solid #AFB1B8
 }
 .icon-company:hover {
-color: var(--accent-color);
+fill:var(--accent-color);
+border: 1px solid var(--accent-color);
+
 }
 .icon-company-list .item {
   margin-right: 30px;
@@ -149,12 +141,10 @@ text-decoration: none;
   width: 270px;
   height: 120px;
 }
-.auth-link-tel:hover {
-  color: var(--accent-color);
-}
-.auth-link-tel:focus{
-  color: var(--accent-color);
-}
+
+
+
+
 
 /* ссылки */
 .auth-link {
@@ -169,6 +159,7 @@ text-decoration: none;
 }
 /* состояние наведения */
 .auth-link:hover {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -562,4 +553,38 @@ h6 {
 }
 .footer-nav-list .item:last-child{
   margin-bottom: 0px;
+}
+
+
+.footer-title {
+   
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-soc-list{
+  display: flex;
+  
+}
+.footer-soc-link {
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-soc-icon {
+  fill: #FFFFFF;
+}
+.footer-soc-link:hover{
+  background-color: var(--accent-color);
+}
+.footer-soc-item + .footer-soc-item {
+  margin-left: 10px;
 }
