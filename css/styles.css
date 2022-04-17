@@ -7,6 +7,7 @@
   --header-logo-color: #000;
   --footer-logo-color: #fff;
   --footer-bg-color: #2f303a;
+  --company-bg-color:#E5E5E5;
 }
 /* основной фон */
 body {
@@ -27,6 +28,7 @@ body {
 .section {
  padding-top: 94px;
   padding-bottom: 94px;
+  justify-content: center;
 }
 /* логотип */
 .page-header {
@@ -95,7 +97,34 @@ body {
   background-image: url(../icon.svg/Vector.svg);
 }
 
-
+.icon {
+display: flex;
+align-items: center;
+justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--primery-bg-color);
+  border-radius: 4px;
+}
+.icon-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--company-bg-color);
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+.icon-company-list .item:last-child{
+  margin-right: 0px;
+}
+.icon-company-list {
+  display: flex;
+  justify-content: center;
+}
 
 .auth-link {font-family: Roboto,
 sans-serif;
@@ -109,25 +138,9 @@ text-decoration: none;
 }
 
 .feature-list .item::before {
-  display:block;
-  content: "";
   background-color: var(--primery-bg-color);
+  width: 270px;
   height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-sputnik::before {
-  background-image: url(../icon.svg/antenna1.svg);
-}
-.icon-time::before {
-  background-image: url(../icon.svg/clock1.svg);
-}
-.icon-comp::before {
-  background-image: url(../icon.svg/diagram1.svg);
-}
-.icon-cosmo::before {
-  background-image: url(../icon.svg/astronaut1.svg);
 }
 .auth-link-tel:hover {
   color: var(--accent-color);
@@ -396,9 +409,6 @@ h6 {
 
 
 
-
-
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -452,6 +462,7 @@ h6 {
   border: transparent;
   
 }
+
 .button-list {
   display: flex;
   justify-content: center;
