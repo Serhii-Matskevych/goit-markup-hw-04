@@ -388,6 +388,11 @@ fill: var(--accent-color);
   
  
 }
+.project .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .card-project {
  padding-top: 20px;
  padding-bottom: 20px;
@@ -506,6 +511,18 @@ h6 {
 .button-list .item {
   margin-right: 8px;
 }
+.button-list .item:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.button-list .item:focus{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 .button-list .item:last-child{
   margin-right: 0;
 }
@@ -520,7 +537,9 @@ h6 {
   color: #fff;
   background-color: var(--accent-color);
 }
-
+.card-project{
+  text-decoration: none;
+}
 .card-title {
   font-size: 18px;
   line-height: 2;
@@ -528,6 +547,7 @@ h6 {
   margin-top: 20px;
   margin-bottom: 4px;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .card-text {
   color: var(--title-text-color);
@@ -535,7 +555,7 @@ h6 {
   line-height: 1.87;
   letter-spacing: 0.03em;
   
-  
+  text-decoration: none;
 }
 
 .footer-page {
@@ -557,18 +577,17 @@ h6 {
 
 
 .footer-title {
-   
+   text-align: center;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 .footer-soc-list{
   display: flex;
-  
+  justify-content: center;
 }
 .footer-soc-link {
   background: rgba(255, 255, 255, 0.1);
