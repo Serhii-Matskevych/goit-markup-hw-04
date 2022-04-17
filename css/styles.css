@@ -116,15 +116,22 @@ justify-content: center;
   background-color: var(--company-bg-color);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+ cursor: pointer;
+}
+.icon-company:hover {
+color: var(--accent-color);
+}
+.icon-company-list .item {
   margin-right: 30px;
 }
 .icon-company-list .item:last-child{
-  margin-right: 0px;
+  margin-right: 0;
 }
 .icon-company-list {
   display: flex;
   justify-content: center;
 }
+
 
 .auth-link {font-family: Roboto,
 sans-serif;
@@ -341,7 +348,44 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
-
+.master-soc-item + .master-soc-item {
+  margin-left: 10px;
+}
+.master-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.master-soc-link {
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.master-soc-icon {
+  fill: #AFB1B8;}
+.master-soc-link:hover {
+  background-color: var(--accent-color);
+}
+.master-soc-link:hover .master-soc-icon {
+  fill: var(--footer-logo-color);
+}
+.clients {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--primary-text-color);
+  margin-bottom: 50px;
+}
+.button-icon {
+  fill:#AFB1B8 ;
+}
+.button-icon:hover {
+fill: var(--accent-color);
+}
 .project {
   display: flex;
   flex-wrap: wrap;
