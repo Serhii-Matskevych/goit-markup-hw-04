@@ -61,6 +61,12 @@ body {
   display: flex;
   margin-left: 93px;
 }
+.page-header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .site-nav-list .item {
   margin-right: 50px;
 }
@@ -223,9 +229,7 @@ url(../img-home-work2/Img9.jpg);
 }
 /* кнопка веб студии */
 .button-primery {
-  display: inline-block;  
   cursor: pointer;
-  font-family: Roboto;
   color: #fff;
   background-color: var(--accent-color);
   font-size: 16px;
@@ -233,6 +237,10 @@ url(../img-home-work2/Img9.jpg);
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   
 }
 .feature-list {
@@ -281,9 +289,13 @@ url(../img-home-work2/Img9.jpg);
   margin-bottom: 50px;
   
 }
+.section-development {
+  padding-bottom: 94px;
+}
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .photo-list {
   display: flex;
@@ -311,12 +323,16 @@ img {
   margin-right: 0;
 }
 /* наша команда */
+.section-command {
+  background-color: var(--primery-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .command {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .card-item {
@@ -437,7 +453,9 @@ h6 {
   padding: 0;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 
 
@@ -537,9 +555,7 @@ h6 {
   color: #fff;
   background-color: var(--accent-color);
 }
-.card-project{
-  text-decoration: none;
-}
+
 .card-title {
   font-size: 18px;
   line-height: 2;
@@ -564,6 +580,14 @@ h6 {
   padding-bottom: 60px;
 
 }
+.container.footer-page {
+  display: flex;
+  align-items: baseline;
+  padding: 0;
+}
+.soc-link {
+  margin-left: 70px;
+}
 .footer-nav-list {
  
   margin-top: 20px;
@@ -577,7 +601,7 @@ h6 {
 
 
 .footer-title {
-   text-align: center;
+   
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.03em;
