@@ -34,7 +34,7 @@ body {
 .page-header {
   border-bottom: 1px solid #ECECEC;;
 }
-.kontainer-header {
+.kontainer .header {
   display:flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -81,15 +81,24 @@ body {
 .auth-nav-list .item +.item {
   margin-left: 50px;
 }
-.icon-mail {
+
+  .tel{
+margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+  }  
+  
+.mail {
+  vertical-align: middle;
+  fill: currentColor;
   margin-right: 10px;
+ width: 16px;
+ height: 12px;
+
 }
-.icon-tel {
-  margin-right: 10px;
-}
-.icon-tel:hover{
-  fill: var(--accent-color);
-}
+
+
+
 .icon {
 display: flex;
 align-items: center;
@@ -99,12 +108,10 @@ justify-content: center;
     margin-bottom: 30px;
     background-color: var(--primery-bg-color);
   border-radius: 4px;
+  margin-right: 10px;
+  fill: var(--title-text-color);
 }
-.icon-mail {
-  align-items: center;
-  justify-content: center;
- 
-}
+
 .icon-company {
   display: flex;
   align-items: center;
