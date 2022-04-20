@@ -113,6 +113,7 @@ justify-content: center;
 }
 
 .icon-company {
+  color: #AFB1B8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +124,7 @@ border: 1px solid #AFB1B8
 }
 .icon-company:hover {
   color: var(--accent-color);
-fill:var(--accent-color);
+
 border: 1px solid var(--accent-color);
 
 }
@@ -368,11 +369,12 @@ img {
   margin-left: 10px;
 }
 .master-soc-list {
+  margin-top: 16px;
   display: flex;
   justify-content: center;
 }
 .master-soc-link {
-  margin-top: 16px;
+  
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -385,8 +387,15 @@ img {
 .master-soc-link:hover {
   background-color: var(--accent-color);
 }
+.master-soc-link:focus {
+  
+  background-color: var(--accent-color);
+}
 .master-soc-link:hover .master-soc-icon {
   fill: var(--footer-logo-color);
+}
+.master-soc-link:focus .master-soc-icon {
+  fill: var(--accent-color);
 }
 .clients {
   font-size: 36px;
@@ -397,12 +406,10 @@ img {
   margin-bottom: 50px;
 }
 .button-icon {
-  fill:#AFB1B8
+  fill:currentColor
 }
 
-.button-icon:hover {
-  fill: var(--accent-color);
-}
+
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -613,7 +620,7 @@ a {
 .footer-title {
    
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -636,6 +643,9 @@ a {
   fill: #FFFFFF;
 }
 .footer-soc-link:hover{
+  background-color: var(--accent-color);
+}
+.footer-soc-link:focus {
   background-color: var(--accent-color);
 }
 .footer-soc-item + .footer-soc-item {
