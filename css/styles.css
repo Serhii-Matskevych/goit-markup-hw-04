@@ -124,9 +124,11 @@ border: 1px solid #AFB1B8
 }
 .icon-company:hover {
   color: var(--accent-color);
-
 border: 1px solid var(--accent-color);
-
+}
+.icon-company:focus {
+  color: var(--accent-color);
+  
 }
 .icon-company-list .item {
   margin-right: 30px;
@@ -394,8 +396,9 @@ img {
 .master-soc-link:hover .master-soc-icon {
   fill: var(--footer-logo-color);
 }
+
 .master-soc-link:focus .master-soc-icon {
-  fill: var(--accent-color);
+  fill: var(--footer-logo-color);
 }
 .clients {
   font-size: 36px;
