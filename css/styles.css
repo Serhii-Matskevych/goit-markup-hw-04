@@ -303,7 +303,7 @@ url(../img-home-work2/Img9.jpg);
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .photo-list {
@@ -418,13 +418,19 @@ img {
 .project .item {
   margin-right: 30px;
   margin-bottom: 30px;
-  
- 
 }
-.project .item:hover {
+.card {
+  display: block;
+}
+.card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-project {
  padding-top: 20px;
@@ -546,13 +552,13 @@ a {
 .button-list .item {
   margin-right: 8px;
 }
-.button-list .item:hover {
+.button-secondary:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.button-list .item:focus{
+.button-secondary:focus{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
