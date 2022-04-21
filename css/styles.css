@@ -303,9 +303,27 @@ url(../img-home-work2/Img9.jpg);
 .section-development {
   padding-bottom: 94px;
 }
+.backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+ position: absolute;
+ background-color: rgba(85, 85, 85, 0.431);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 528px;
+  height: 581px;
+  background-color: #FFFFFF;
+  border: 5px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .photo-list {
